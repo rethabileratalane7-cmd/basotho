@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Feedback Page</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+}
+
+.contact-form {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: grey;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #333;
+}
+
+.contact-form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #555;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+      border-color: #007BFF;
+      outline: none;
+}
+
+.contact-form button {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+      background-color: black;
+}
+
+    @media (max-width: 600px) {
+.contact-form {
+        padding: 1rem;
+}
+}
+  </style>
+</head>
+<body>
+ <form class="contact-form">
+    <h2>Contact Us</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="topic">Topic of Interest:</label>
+    <select id="topic" name="topic">
+      <option value="">--Please choose an option--</option>
+      <option value="home.html">Home</option>
+      <option value="clothing.html">Traditional clothing</option>
+      <option value="crafts.html">crafts and festivals</option>
+    </select>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+</body>
+</html>
+
